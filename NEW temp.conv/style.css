@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+.wrapper{
+    height: 350px;
+    width: 500px;
+    background-color:rgba(0,0,0,0.3);
+    padding: 70px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+    border-radius: 8px;
+}
+.container{
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-left: 1px;
+    margin-right: 18px;
+    margin-bottom: 5px;
+
+}
+input:focus{
+    border-color: #3164ff;
+}
+p{
+    
+    position: absolute;
+    transform: translate(-10%,-70%);
+   
+    top: 10%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightblue;
+    font-size:50px;
+}
+label{
+    margin-left: 0px;
+    color: lightblue;
+    margin-top:22px;
+}
+button{
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 100px;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer;
+    color: rgb(191, 56, 23);
+    background-color: lightblue;
+    border: 2px solid lightblue;
+}
+button:hover{
+    box-shadow: 12px solid rgb(116, 189, 232);
+    background-color: palevioletred;
+    color: azure;
+    outline:none;
+}
+span{
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate-reverse;
+    font-size: 25px;
+}
+@keyframes move{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+     margin-left: 140px;
+     color: yellow;
+    }
+}

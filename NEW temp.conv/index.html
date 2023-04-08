@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Conversion</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="img" class="image"><img src="asd.avif" height="595px" width="1300px" alt=""></div>
+    <div class="wrapper">
+        <p><span>Temperature Convertor</span></p>
+        <div class="container">
+            <label for="celsius"> Celsius</label>
+            <input type="number" id="celsius" placeholder="input celcius in number">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit" oninput = "farToCel()">
+        </div>
+        <button type="button" onclick="celToFar()">CONVERT</button>
+        
+        <div class="button"></div>
+    </div>
+    <!--Javascript-->
+    <script src="script.js"></script>
+</body>
+</html>
